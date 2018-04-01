@@ -1,0 +1,251 @@
+*, p, ul, li, h1, h2, h3, h4, h5{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    color: #111;
+    background-color: #fff;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background: #fff;
+    position: relative;
+    padding: 15px 0;
+}
+
+img {
+    width:  35px;
+    height:  100%;
+}
+
+.top-header {
+    display:  inline-block;
+    min-width:  100%;
+}
+
+header .logo img {
+    width: 250px;
+    height: 100%;
+}
+
+header .box-search {
+    display:  inline-block;
+    position:  relative;
+}
+
+header .setting {
+    display:  inline-block;
+}
+
+header .language {
+    display:  inline-block;
+}
+
+header .language li {
+    display:  inline-block;
+    padding: 0px 2px;
+}
+
+header .menu-top li {
+    display:  inline-block;
+    margin-left: 15px;
+}
+
+header .menu-top {
+    text-align:  right;
+    margin: 20px 0 10px 0;
+}
+
+header .box-search input[type="text"] {
+    border: 1px solid #ededed;
+    padding: 6px 8px;
+    width: 250px;
+}
+
+header .box-search button {
+    padding: 6px 8px;
+    border: 1px solid #ededed;
+    background:  #fff;
+}
+
+header .box-search span {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: -5px;
+}
+
+.content .top-search {
+    padding:  10px 0;
+}
+
+.content .data-map img {
+    width:  100%;
+    height:  100%;
+}
+
+.content .item-search span {
+    display:  inline-block;
+}
+
+#myCarousel img {
+    width:  100%;
+}
+
+header .setting {
+    padding: 0 20px;
+    display: inline;
+}
+
+header .setting a {
+    padding: 0 10px;
+    font-size: 24px;
+}
+
+header .header-top {
+    text-align:  right;
+    margin-top: 10px;
+}
+
+header .language img {
+    width: 24px;
+    border: 1px solid #111;
+}
+
+header .menu-top li a {
+    color: #a0a0a0;
+}
+
+header .menu-top li:hover a:hover {
+    color: #09c;
+}
+
+header .menu-top li.active-menu a {
+    color: #09c;
+}
+
+.content .top-search .item-image {
+    display:  inline-block;
+    border: 1px solid #aeca53;
+    padding: 20px;
+    border-radius:  50%;
+    margin: 6px 30px 0px 6px;
+}
+
+.content .top-search .item-sub {
+    display:  inline-block;
+}
+
+.content .item-image img {
+    width: 100%;
+}
+
+.content .item-search .item-sub a {
+    color: #aeca53;
+}
+
+.content .search-property h3 {
+    color: #004ea2;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight:  bold;
+}
+
+.content .search-property {
+    background: #ededed;
+    padding: 25px 0;
+}
+
+.content .main-search input[type="text"] {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #004ea2;
+}
+
+.content .search-property select {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #004ea2;
+}
+
+.content .main-search {
+    width:  100%;
+    display:  inline-block;
+    margin-bottom: 10px;
+}
+
+.content .plus-search input.inSearch {
+    width: 100%;
+    height: 100%;
+    color:  #fff;
+    background:  #337ab7;
+    padding: 7px;
+    border:  0;
+}
+
+.content .plus-search a {
+    font-size: 17px;
+    position:  relative;
+    top: 6px;
+    color: #004ea2;
+}
+
+.content .plus-search i.fa.fa-external-link {
+    margin-right: 10px;
+}
+
+.content .widget-item{
+    display: none;
+}
+
+.content .tab-content .project-item img {
+    width: 100%;
+    padding: 8px 6px;
+    border-bottom: 1px solid #ededed;
+}
+
+.content .project-item .item-details span {
+    /* display: block; */
+    padding: 5px;
+    /* line-height: 15px; */
+}
+
+.content .project-item {
+    margin:  15px 0;
+    border:  1px solid #ededed;
+}
+
+.content .project-item h4 {
+    text-align:  center;
+    color:  #09c;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ededed;
+    padding:  8px 6px;
+}
+
+.content .project-item .item-details  i {
+    font-size: 16px;
+    margin: 0 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.content .project-item .item-details p {
+    line-height: 30px;
+    overflow:  hidden;
+    white-space:  nowrap;
+    text-overflow:  ellipsis;
+}
+
+p.item-infobasic {
+    display: inline-block;
+}
