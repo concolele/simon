@@ -19,6 +19,7 @@ body {
 header {
     background: #fff;
     position: relative;
+    padding-bottom: 0;
 }
 
 img {
@@ -33,50 +34,22 @@ img {
 header .top-header {
     background:  #0063d1;
     color:  #fff;
-    padding:  10px 0;
 }
 
 header a {
     color:  #fff;
     position:  relative;
+    display: block;
 }
 
-header ul li {
-    display:  inline-block;
+header .top-right>ul>li {
+    display: inline-block !important;
     position:  relative;
     list-style:  none;
 }
 
-header li.dropdown-top {
-    margin-right: 25px;
-}
-
-header .dropdown-top span:after {
-    content: '';
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: 5px;
-    margin-left: 7px;
-    border: 5px solid transparent;
-    border-color: rgba(255,255,255,1) rgba(0,0,0,0) rgba(0,0,0,0);
-}
-
 header .top-right.pull-right {
     position:  relative;
-}
-
-header .sub-account {
-    display:  none;
-    position:  absolute;
-    background: #2196f3;
-    top: 30px;
-    min-width: 150px;
-    right: -10px;
-}
-
-header .account li:hover ul {
-    display:  inline-block;
 }
 
 header .sub-account>li {
@@ -84,11 +57,160 @@ header .sub-account>li {
     margin:  0 10px;
 }
 
-ul.account {
-    position:  relative;
-}
-
 header a:hover {
     text-decoration:  none;
     color:  #fff;
+}
+
+header .btn:hover {
+    color:  #fff;
+}
+
+header .dropdown-menu {
+    background: #2196f3;
+    border-radius:  0;
+    border: none;
+    position:  absolute;
+    left: -60px;
+}
+
+header .dropdown-menu>a {
+    padding: 2px 10px;
+    line-height:  35px;
+}
+
+header .top-right>ul>li>a {
+    padding: 6px 0px 6px 12px;
+}
+
+header .top-left>a {
+    padding:  6px 12px;
+}
+
+header .center-header {
+    background:  #0063d1;
+    border-top: 1px solid rgba(255,255,255,.1);
+    padding:  15px 0;
+}
+
+header .box-search select {
+    height:  38px;
+    float:  left;
+    width:  30%;
+    border:  none;
+    background:  #ededed;
+    padding:  6px 12px;
+}
+
+header .box-search input[type="text"] {
+    float:  left;
+    width:  50%;
+    height:  38px;
+    border:  none;
+    padding:  6px 12px;
+}
+
+header .box-search button {
+    border:  none;
+    background: #2196F3;
+    float:  left;
+    width: 20%;
+    padding:  6px 12px;
+    height:  38px;
+    color: #fff;
+}
+
+header .box-search {
+    padding: 15px 0;
+}
+
+a.cart-top {
+    text-align: left;
+    background: url(../img/sprite.png) no-repeat;
+    padding: 3px 0 0 62px;
+    margin: 13px 20px;
+    float:  right;
+}
+
+header .menu-top {
+    background: #2196F3;
+    display:  inline-block;
+    width: 100%;
+}
+
+header .menu-top .main-menu ul li {
+    display: inline-block;
+    padding: 15px 20px;
+    float: left;
+    position:  relative;
+}
+
+header .menu-top .main-menu ul li a {
+    text-transform: uppercase;
+}
+
+header .menu-top .main-menu ul li.active-menu {
+    background: #0063d1;
+}
+
+header .menu-top .main-menu ul li:hover {
+    background: #0063d1;
+}
+
+header .sub-menu {
+    display:  none;
+    position:  absolute;
+    z-index:  1;
+    top: 50px;
+    left:  0;
+    border-top: 1px solid #0063d1;
+    min-width: 150px;
+    transition: all .3s;
+}
+
+header .menu-top .main-menu ul li:hover .sub-menu {
+    display:  inline-block;
+}
+
+header ul>li>ul>li {
+    width: 100%;
+    background: #fff;
+}
+
+header ul>li>ul>li a {
+    color:  #000;
+}
+
+header .main-menu {
+    position:  relative;
+}
+
+.content {background:  #ededed;}
+
+.content .active-menu-content i.fa.fa-list {
+    background: #ff9800;
+    color:  #fff;
+    padding: 12px;
+    position:  absolute;
+    font-size: 18px;
+    top: -12px;
+    left: -50px;
+}
+
+li.active-menu-content {
+    padding: 11px 10px 11px 50px;
+    background: #2196F3;
+    display:  inline-block;
+    position:  relative;
+    width: 100%;
+}
+
+.content .box-category .top-content-menu span {
+    background:  #2196F3;
+    color:  #fff;
+    width:  100%;
+    position:  relative;
+    text-transform:  uppercase;
+    font-weight: bold;
+    font-size: 14px;
 }
