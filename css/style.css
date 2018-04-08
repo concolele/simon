@@ -11,7 +11,7 @@
 
 body {
     color: #111;
-    background-color: #ededed;
+    /* background-color: #ededed; */
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
 }
@@ -271,10 +271,11 @@ li#active-menu-content {
     width:  100%;
 }
 
-.content .product-item {
+.content .list-product {
     float:  left;
-    padding: 7px;
+    padding: 0 7px;
     width:  20%;
+    margin-bottom: 14px;
 }
 
 .content .item-img img {
@@ -285,15 +286,19 @@ li#active-menu-content {
     background:  #fff;
     text-align:  center;
     padding-bottom: 10px;
+    line-height: 25px;
 }
 
 .content .detail-mask {
     position: absolute;
-    opacity: 0;
-    text-align: center;
-    bottom: 0;
+    top: 0;
     width: 100%;
-    padding: 10px 0;}
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .1s;
+    background: rgba(0,0,0,.4);
+    }
 
 .content .item-img {
     position: relative;
@@ -301,27 +306,368 @@ li#active-menu-content {
 }
 
 .content .detail-mask i {
-    margin-right:  10px;
-    padding:  10px;
-    font-size:  16px;
-    border:  1px solid #ededed;
+    /* transform: scale(0); */
+    /* transition: all .4s ease 0s; */
 }
 
 .content button.buy-now {
     background: none;
     border: 1px solid #ededed;
-    padding: 5px;
+    padding: 5px 20px;
     text-align: center;
-    color: #888;}
+    color: #888;
+}
 
 .content p.item-price {
     color: #f50728;
 }
 
 .content .product-item:hover .detail-mask {
-    opacity:  1;
+    opacity: 1;
+    visibility: visible;
 }
 
-.content .product-item:hover .item-img {
-    background:  #888;
+.content .product-item:hover .detail-mask .link-href a {
+    transform: scale(1);
+}
+
+.content .product-item .detail-mask .link-href a{
+    color: #fff;
+    display: inline-block;
+    width:  40px;
+    height: 40px;
+    margin: 0 4px;
+    text-align:  center;
+    line-height: 40px;
+    border: 1px solid #ededed;
+    transform: scale(0);
+    transition: all .4s ease 0s;
+}
+
+.content .product-item .detail-mask .link-href a:hover{
+    background: #2196f3;
+}
+
+.content .link-href {
+    position:  absolute;
+    bottom:  20px;
+    text-align: center;
+    left: 0;
+    width: 100%;
+}
+
+header .box-search input[type="text"]:focus, select:focus, button:focus {
+    outline: 0;
+}
+
+.content .tab-product span.new-post-text {
+    position:  absolute;
+    top:  0;
+    right:  0;
+    background:  #c00;
+    color:  #fff;
+    padding: 2px 5px;
+}
+
+.content .tab-product i.fa.fa-shopping-basket {
+    margin-right:  5px;
+}
+
+.content .tab-product {
+    margin-top:  20px;
+}
+
+.content .tab-product ul.nav.nav-pills {
+    background:  #fff;
+    display:  inline-block;
+    width:  100%;
+    margin-bottom: 10px;
+}
+
+.content .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background: #2196f3 !important;
+}
+
+.content .nav-pills>li>a {
+    border-radius:  0;
+    padding: 10px 50px;
+    text-transform:  uppercase;
+}
+
+.content .tab-product .nav>li>a:nth-child(n+1):hover{
+    background: none;
+}
+
+.content button.buy-now:hover {
+    background:  #2196f3;
+    color:  #fff;
+}
+
+.content .bot-content {
+    background:  #fff;
+    padding-top: 10px;
+    margin-top:  30px;
+}
+
+.content .bot-content ul.nav.nav-pills {
+    background:  #edededed;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.content .bot-content img {
+    width:  100%;
+}
+
+.content .bot-content .news-one {
+    line-height: 25px;
+}
+
+.content .bot-content a.news-title {
+    color:  #2196F3;
+    font-size:  16px;
+    font-weight: 400;
+}
+
+.content .bot-content .meta span {
+    opacity: .5;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.content .text-overflow {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.content .bot-content .pull-left {
+    width:  40%;
+}
+
+.content .bot-content .pull-right {
+    width:  60%;
+}
+
+.content .bot-content .news-other {
+    display:  inline-block;
+    width:  100%;
+    border-bottom: 1px dashed #f1f1f1;
+    padding-bottom: 15px;
+}
+
+.content .bot-content .news-other .pull-right {
+    padding-left: 10px;
+    text-align:  left;
+}
+
+.content .bot-content .news-other .meta span {
+    display:  inline-block;
+}
+
+.content .bot-content .news-other a.news-title {
+    font-weight: 600;
+}
+
+.content .tab-product .tab-content {
+    margin:  0 -7px;
+}
+
+.bot-content .evaluate .tab-content {
+    background:  #ededed;
+}
+
+.bot-content .evaluate .evaluate-item {
+    padding: 20px;
+    line-height: 25px;
+}
+
+.bot-content .evaluate p.comment-txt {
+    margin-bottom: 20px;
+}
+
+.bot-content .evaluate .rating {
+    text-align:  center;
+}
+
+.bot-content .evaluate .rating i {
+    color: #FFC107;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.bot-content .evaluate .member {
+    text-align:  center;
+}
+
+.bot-content .evaluate .member h3 {
+    padding-top:  20px;
+    color: #2196F3;
+    font-size: 18px;
+}
+
+.member img {
+    border-radius:  50%;
+    width: 100px !important;
+    height: 100px;
+    padding:  1px;
+    border:  1px solid #fff;
+    margin:  0 auto;
+}
+
+.other-content {
+    background: #2196f3;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    padding:  20px 0;
+}
+
+.other-content .int-email i.fa.fa-envelope {
+    display:  inline-block;
+    float:  left;
+    color:  #fff;
+    font-size: 48px;
+    margin-right:  10px;
+    text-align:  center;
+}
+
+.other-content .int-email p {
+    /* display:  inline-block; */
+    /* float:  left; */
+    /* width:  60%; */
+    color:  #fff;
+}
+
+.other-content .int-email {
+    display:  inline-block;
+    float:  left;
+}
+
+.other-content .int-email p span {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    display: block;
+}
+
+.other-content .box-subscribe input[type="text"] {
+    float: left;
+    width: 100%;
+    height: 38px;
+    border: 1px solid #fff;
+    padding: 6px 12px;
+    background: #5ab1f6;
+}
+
+.other-content .box-subscribe {
+    padding: 5px 10px;
+    width: 100%;
+    text-align:  center;
+    position:  relative;
+}
+
+.other-content button {
+    background: #ff9800;
+    float: right;
+    padding: 6px 12px;
+    height: 38px;
+    color: #fff;
+    position:  absolute;
+    right: 10px;
+    border: 1px solid #fff;
+}
+
+.other-content .box-subscribe input[type="text"]:focus, select:focus, button:focus {
+    outline: 0;
+}
+
+.other-content .social-content {
+    text-align:  center;
+}
+
+.other-content .social-content i {
+    color:  #fff;
+    margin: 0px 10px;
+    border-radius:  50%;
+    border:  1px solid #fff;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    padding: 10px;
+    line-height: 25px;
+    transition: all .3s;
+}
+
+.other-content .social-content i:hover {
+    background: #0056b3;
+}
+
+footer .top-footer {
+    padding: 20px 0;
+    background:  #202020;
+}
+
+footer .top-footer p {
+    color:  #ededed;
+}
+
+footer .top-footer h3 {
+    color:  #fff;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+footer .contact-content {
+    margin-top: 15px;
+    line-height: 27px;
+}
+
+.contact-content .info-contact p span i {
+    width:  20px;
+    height:  20px;
+}
+
+.contact-content i.fa.fa-home {
+    color: #2196F3;
+}
+
+.contact-content i.fa.fa-envelope-open {
+    color: #46a64a;
+}
+
+.contact-content i.fa.fa-phone {
+    color:  #e91e63;
+}
+
+.contact-content i.fa.fa-globe {
+    color:  #ffc107;
+}
+
+footer .menu-footer li {
+    padding: 5px 0;
+    border-bottom: 1px dashed #ededed;
+}
+
+footer i.fa.fa-angle-double-right {
+    margin-right: 5px;
+    color:  #337ab7;
+}
+
+footer .menu-footer a {
+    color:  #fff;
+}
+
+footer .contact-content img {
+    width: 70%;
+}
+
+footer .bot-footer {
+    background:  #333;
+}
+
+footer .bot-footer p {
+    text-align:  center;
+    color:  #fff;
+    padding: 15px 0;
 }
