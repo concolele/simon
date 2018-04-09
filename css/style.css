@@ -21,6 +21,8 @@ header {
     position: relative;
     padding-bottom: 0;
     background-color: #ededed;
+    display: block;
+    width:  100%;
 }
 
 img {
@@ -136,8 +138,6 @@ a.cart-top {
 
 header .menu-top {
     background: #2196F3;
-    display:  inline-block;
-    width: 100%;
 }
 
 header .menu-top .main-menu ul li {
@@ -187,7 +187,7 @@ header .main-menu {
     position:  relative;
 }
 
-.content {background:  #ededed;margin-top: 15px;}
+.content {background:  #ededed;padding-top: 15px;display: block;width:  100%;}
 
 .content #active-menu-content>span>i.fa.fa-list {
     background: #ff9800;
@@ -216,6 +216,7 @@ li#active-menu-content {
     text-transform:  uppercase;
     font-weight: bold;
     font-size: 14px;
+    /* transform: translateY(-50%); */
 }
 
 .content .box-category ul li {
@@ -517,8 +518,6 @@ header .box-search input[type="text"]:focus, select:focus, button:focus {
 
 .other-content {
     background: #2196f3;
-    display: inline-block;
-    width: 100%;
     position: relative;
     padding:  20px 0;
 }
@@ -561,7 +560,7 @@ header .box-search input[type="text"]:focus, select:focus, button:focus {
 }
 
 .other-content .box-subscribe {
-    padding: 5px 10px;
+    padding: 10px 10px;
     width: 100%;
     text-align:  center;
     position:  relative;
@@ -584,6 +583,7 @@ header .box-search input[type="text"]:focus, select:focus, button:focus {
 
 .other-content .social-content {
     text-align:  center;
+    padding: 5px 0;
 }
 
 .other-content .social-content i {
@@ -670,4 +670,118 @@ footer .bot-footer p {
     text-align:  center;
     color:  #fff;
     padding: 15px 0;
+}
+
+.contact-content i {
+    width: 20px;
+    height:  20px;
+}
+
+.content .box-category span.down-menu {
+    display: none;
+    position: absolute !important;
+    width: 40px !important;
+    height: 40px;
+    right:  0;
+    top: 0px;
+    font-size: 28px !important;
+    text-align: center;
+}
+
+.content .box-category i.fa.fa-sort-down {
+    margin-right: 0 !important;
+    font-size: 30px !important;
+    transform: translateY(-20%);
+}
+
+@media (max-width: 991px){
+    .content .box-category span.down-menu {
+        display: block;
+    }
+    .sub-menu-content {
+        position:  relative;
+        opacity: 1;
+        left:  0;
+    }
+    .content .box-category ul li:hover .sub-menu-content {
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+}
+
+.menu-mobile {
+    display: none;
+    color:  #fff;
+    text-transform:  uppercase;
+    padding: 10px 0;
+    font-size:  16px;
+}
+
+@media (max-width: 767px){
+    .menu-mobile{
+        display: block;
+    }
+    .menu-mobile span {
+        top: 7px;
+        width:  35px;
+        height:  3px;
+        background: #fff;
+        position:  relative;
+        display: inline-block;
+    }
+    .menu-mobile span:after {
+        content: '';
+        width:  35px;
+        height:  3px;
+        background: #fff;
+        position:  relative;
+        display: block;
+        top: -25px;
+    }
+    .menu-mobile span:before {
+        content: '';
+        width:  35px;
+        height:  3px;
+        background: #fff;
+        position:  relative;
+        display: block;
+        top: -11px;
+    }    
+    .menu-top .main-menu{
+        width: 100%;
+        display: inline-block;
+        background: rgba(0,99,209,.9);
+    }
+    .menu-top .main-menu li{
+        width: 100%;
+        display: block;
+        border-bottom: 1px solid #2196F3; 
+    }
+    .sub-menu{
+        width: 100%;
+        display: inline-block !important;
+        position: relative !important;
+        top: 15px !important;
+    }
+    header ul>li>ul>li{
+        background: rgba(0,99,209,.9);
+        border-bottom: none !important;
+        color:  #fff;
+    }
+    header .menu-top .main-menu ul li:hover .sub-menu {
+        display:  block;
+    }
+    header ul>li>ul>li a{
+        color: #fff;
+    }
+    header ul>li>ul>li a:before{
+        content: "\f101";
+        margin-right: 5px;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+    }
 }
