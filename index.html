@@ -48,12 +48,21 @@
           <div class="center-header">
             <div class="container">
               <div class="row">
-                <div class="col-4 col-sm-4 col-md-4 col-lg-3 mobile-style">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mobile-style">
                   <div class="logo-header">
                     <a href=""><img src="img/logo.png" alt=""></a>
                   </div>
                 </div>
-                <div class="col-4 col-sm-4 col-md-4 col-lg-6 mobile-style">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mobile-style push-desktop">
+                  <div class="box-cart pull-right">
+                    <a href="" class="cart-top">
+                      <span>Giỏ hàng</span>
+                      <br>
+                      <span>0 Sản phẩm - 0d</span>
+                    </a>                    
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 mobile-style push-desktop">
                   <div class="box-search">
                     <form action="" method="get" role="form">
                       <select name="product-cat" id="product-cat">
@@ -68,29 +77,23 @@
                     </form>
                   </div>
                 </div>
-                <div class="col-4 col-sm-4 col-md-4 col-lg-3 mobile-style">
-                  <a href="" class="cart-top">
-                    <span>Giỏ hàng</span>
-                    <br>
-                    <span>0 Sản phẩm - 0d</span>
-                  </a>
-                </div>
               </div>
             </div>
           </div><!--center-header-->
+          <div class="clear"></div>
           <div class="menu-top">
             <div class="container">
               <div class="menu-mobile">
                 <div class="row">
                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="pull-left">Menu</div>
-                    <div class="pull-right">
+                    <div class="pull-right click-menu">
                       <span></span>
                     </div>
                   </div>
                 </div>                
               </div>
-              <div class="main-menu">
+              <div class="main-menu" id="main-menu">
                 <ul>
                   <li class="active-menu">
                     <a href="#">Trang chủ</a>
@@ -145,8 +148,8 @@
                       </li>
                       <li>
                         <a href=""><i class="fa fa-clock-o"></i>Đồng hồ</a>
-                        <span class="down-menu"><i class="fa fa-sort-down"></i></span>
-                        <ul class="sub-menu-content">
+                        <span class="down-menu" ><i class="fa fa-sort-down"></i></span>
+                        <ul class="sub-menu-content" id="sub-menu-content">
                           <li>
                             <a href="#">Iphone</a>
                           </li>
@@ -1246,9 +1249,11 @@
           <div class="bot-footer">
             <p><span>Copyright © 2018 Blog HuyKira All Rights Reserved. Design by Huy Kira</span></p>
           </div>
+          <a href="" class="back-to-top"><i class="fa fa-angle-up"></i></a>
         </footer>
       </div><!--end wrapper -->
       <script src="js/jquery-3.2.1.min.js"></script>
       <script src="js/bootstrap/js/bootstrap.min.js"></script>
+      <script src="js/test.js"></script>
 </body>
 </html>
