@@ -260,16 +260,14 @@ li#active-menu-content {
     width:  100%;
     z-index:  1;
     transition: all .3s;
+    visibility: hidden;
 }
 
-.content .box-category ul>li>ul>li:hover .sub-menu-content {
-    opacity: 0;
-}
-
-.content .box-category ul li:hover .sub-menu-content {
+.content div>ul>li:hover .sub-menu-content {
     opacity: 1;
     position: absolute;
     left: 260px;
+    visibility: visible;
 }
 
 .content .box-category {
@@ -294,8 +292,6 @@ li#active-menu-content {
     text-align:  center;
     padding-bottom: 10px;
     line-height: 25px;
-    /* display:  inline-block; */
-    /* width: 100%; */
 }
 
 .content .detail-mask {
@@ -885,6 +881,27 @@ footer .bot-footer p {
     .container {
         max-width: 720px;
     }
+    header .menu-top .main-menu ul li {
+        padding: 10px;
+    }
+    .box-category {
+        margin-bottom: 20px;
+    }
+    .evaluate .tab-content {
+        margin-bottom: 20px;
+    }
+    .col-md-12 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .col-md-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 } 
 @media (max-width: 991px) {
     .content .box-category span.down-menu {
@@ -900,9 +917,9 @@ footer .bot-footer p {
     .content .box-category ul li:hover .sub-menu-content {
         display: none;
     }
-    .menu-mobile{
+/*    .menu-mobile{
         display: block;
-    }
+    }*/
     .content .list-product {
         width: 33.3333%;
     }
@@ -986,6 +1003,10 @@ footer .bot-footer p {
     .other-content .social-content i{
         margin: 0px 5px;
     }
+
+    header .menu-top .main-menu ul li {
+        padding: 15px 20px;
+    }
 }
 @media (max-width: 1050px) {
 
@@ -999,6 +1020,12 @@ footer .bot-footer p {
 @media (min-width: 1200px) {
     .container {
         max-width: 1170px;
+    }
+    .content .list-product {
+        width: 20%;
+    }
+    header .menu-top .main-menu ul li {
+        padding: 15px 20px;
     }
 }
 /*div>img center*/
